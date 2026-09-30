@@ -18,13 +18,10 @@ V1_mL = (C2_uM * V2_mL) / C1_uM;
 V1_uL = V1_mL * 1000;
 
 % 4. Display result clearly
-fprintf('Pipette %.2f uL of stock into %.2f mL of buffer.\n', V1_uL, V2_mL - V1_mL); 
-
+fprintf('Pipette %.2f uL of stock into %.2f mL of buffer.\n', V1_uL, V2_mL - V1_mL);
 
 Day 2: Vectors & Biological Indexing
-Core Concept (5 min): Row vectors ([1, 2, 3]), column vectors ([1; 2; 3]), 
-1-based indexing in MATLAB, 
-slicing (start:stop), and generating regular intervals with linspace or the colon operator (:).
+Core Concept (5 min): Row vectors ([1, 2, 3]), column vectors ([1; 2; 3]), 1-based indexing in MATLAB, slicing (start:stop), and generating regular intervals with linspace or the colon operator (:).
 
 v1 = [25, 30, 45, 50, 60];  % example patient ages
 
@@ -36,5 +33,7 @@ v1_every_other = v1(1:2:end);
 
 % Generate a vector of ages from 20 to 60 with a step of 5
 v1_range = 20:5:60;
+
+
 
 Wet-Lab Biology Context: Storing patient age data and extracting specific cohort subgroups.
