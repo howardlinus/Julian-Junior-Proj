@@ -19,3 +19,8 @@ V1_uL = V1_mL * 1000;
 
 % 4. Display result clearly
 fprintf('Pipette %.2f uL of stock into %.2f mL of buffer.\n', V1_uL, V2_mL - V1_mL);
+
+Day 2: Vectors & Biological Indexing
+Core Concept (5 min): Row vectors ([1, 2, 3]), column vectors ([1; 2; 3]), 1-based indexing in MATLAB, slicing (start:stop), and generating regular intervals with linspace or the colon operator (:).
+
+Wet-Lab Biology Context: Storing patient age data and extracting specific cohort subgroups.
