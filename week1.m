@@ -65,3 +65,30 @@ med_age = mean(skewed_age);
 % extract patients 3 through 6 into a separate vector called mid_cohort
 mid_cohort = patient_ages(3:6)
 
+
+
+%% --- DAY 3: Vectorized Operations & Dot Syntax (.*, ./, .^) ---
+
+%{
+Core Concept (5 min): Element-wise arithmetic vs. matrix algebra. 
+In MATLAB, 
+applying an operation across an entire array without a for loop requires the "dot" 
+operator (.^, .*, ./) 
+%}
+
+% Parameters
+N0 = 10000;         % Initial seeded leukemia cells
+doubling_time = 18; % Doubling time in hours (CML cell line)
+time_hours = 0:6:72;% Track every 6 hours over 3 days
+(0, 6, 12, 18 ...)
+
+cell_count =  N0.*2 .^(time_hours ./ doubling_time);
+
+% Let's see how fast they expand:
+disp('Time (Hours) vs Cell Count:');
+
+disp([time_hours', cell_counts']);
+
+[time_hours', cell_count']
+
+
